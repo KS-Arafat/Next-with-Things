@@ -5,6 +5,14 @@
 - Parallel Route
 
   - More on [Nextjs Parallel Route](https://nextjs.org/docs/app/building-your-application/routing/parallel-routes)
+  
+  - In `/parallel` route dev mode for simulating delay functions
+  
+  - Suspense can be added by creating `loading.tsx` in any route
+  
+  - *OR* add `<Suspense>` component with custom loading in `fallback` attrib
+  
+  > Add `default.tsx` to each section to avoid refresh error
 
 - Standalone Build
 
@@ -35,3 +43,13 @@
   - Allows masking default url to another url path
 
   - For this project, `/landing.html` masked to `/landing`
+
+- Conditional prefetch  
+
+  - [***Docs***: `router.prefetch(...)`](https://nextjs.org/docs/app/building-your-application/caching#routerprefetch)
+
+  - Route `/parallel/subsection`
+
+  - Clicking button 3rd time will prefetch `/dummy`
+
+  - And that route will directly load from cache
