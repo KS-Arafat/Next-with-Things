@@ -13,6 +13,14 @@ const nextConfig: NextConfig = {
 			},
 		],
 	},
+	async rewrites() {
+		return [
+			{
+				source: "/landing",
+				destination: "/landing.html",
+			},
+		];
+	},
 };
 if (
 	process.env.BUILDMODE !== undefined &&

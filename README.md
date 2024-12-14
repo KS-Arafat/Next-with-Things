@@ -8,11 +8,11 @@
 
 - Standalone Build
 
-  - [Nextjs Standalone Build Doc](https://nextjs.org/docs/app/api-reference/config/next-config-js/output#automatically-copying-traced-files)
+  - [***Docs:*** Nextjs Standalone Build](https://nextjs.org/docs/app/api-reference/config/next-config-js/output#automatically-copying-traced-files)
 
   - In `next.config.ts` add `output: "standalone"`
 
-  - ___For this project just add `BUILDMODE = "standalone"` in `env.local`___
+  - ***For this project just add `BUILDMODE = "standalone"` in `env.local`***
 
   - Run `pnpm build`
 
@@ -27,3 +27,11 @@
 
   > NB: If there is symlinks in `node_modules` have to add `.npmrc` in root directory
   > and add `node-linker=hoisted`
+
+- `rewrites` Map incoming request path
+
+  - [***Docs:*** `rewrites` in next.config.ts](https://nextjs.org/docs/app/api-reference/config/next-config-js/rewrites)
+
+  - Allows masking default url to another url path
+
+  - For this project, `/landing.html` masked to `/landing`
