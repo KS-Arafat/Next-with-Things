@@ -1,12 +1,13 @@
 {
-  "name": "test",
+  "name": "next-with-things",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start:standalone": "node .\\.next\\standalone\\server.js"
   },
   "dependencies": {
     "next": "15.1.0",
