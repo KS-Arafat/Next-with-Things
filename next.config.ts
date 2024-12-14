@@ -1,7 +1,4 @@
 import type { NextConfig } from "next";
-import { loadEnvFile } from "node:process";
-
-loadEnvFile("./.env.local");
 
 const nextConfig: NextConfig = {
 	/* config options here */
